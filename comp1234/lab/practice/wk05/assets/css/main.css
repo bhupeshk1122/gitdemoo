@@ -1,0 +1,70 @@
+body{
+    background-color: tan; font-family: Arial, sans-serif;
+}
+.lorempi{
+    font-family: "Time New Roman", Times, serif, serif;
+}
+.lorem {
+    font-size: 150%;
+    color: #0000ff;
+}
+
+h3+h4, h4+ol{
+    border:1px solid red;
+}
+section{
+    background-color:yellow;
+}
+section h2+p{
+    background-color:pink;
+}
+a[href="https://my.gblearn.com"]{
+    border: 2px dotted red;
+}
+
+a[href="https://mygblearn.com"]:hover,a[href="https://mygblearn.com"]:focus {
+    border: 3px dotted red;
+}
+#lorem::first-letter{
+    font-size: 180%;
+    color: green;
+}
+ol li::first-child{
+    color: red;
+}
+ol li:last-child{
+    color:red;
+}
+ol li:nth-child(3){
+    color:purple;
+}
+header>h1{
+    font-size: 550%;
+    text-shadow: 4px 3px 4px blue;
+    color: lightcoral;
+}
+#wrapper{
+    background-color:lightcyan;
+    margin:5em auto;
+    border: 3px solid purple;
+    width: 1024px;
+
+}
+h2, h3, h4{
+    color: purple;
+    border-bottom: 2px darkred;
+}
+header{
+    text-align: center;
+    background-image: url("../images/rsz_pexels-alexander-popovkin-127845385.jpg");
+    background-size: cover;
+}
+.button{
+    text-decoration: none;
+    border: 4px solid cornflowerblue;
+    padding: 8px;
+    border-radius: 20px;
+    background-image: linear-gradient(rebeccapurple, violet);
+    color: bisque;
+    box-shadow: 4px 4px 6px blue;
+}

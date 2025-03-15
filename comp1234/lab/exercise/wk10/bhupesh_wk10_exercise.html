@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 10 Exercise</title>
+    <meta name="description" content="Week 10 Exercise.">
+    <meta name="keywords" content="Week 10 Exercise">
+    <meta name="author" content="bhupesh kumar">
+    <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 20px;
+        }
+        fieldset {
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            max-width: 700px;
+            margin: auto;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .container div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <legend>Application Form</legend>
+    <div class="container">
+        <form id="applicationForm" onsubmit="return validateForm()">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" min="2023-01-01">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required min="12">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Favorite Foods</legend>
+                    <div>
+                        <input type="checkbox" id="pizza" name="food" value="Pizza">
+                        <label for="pizza">Pizza</label>
+                        <input type="checkbox" id="hamburger" name="food" value="Hamburger">
+                        <label for="hamburger">Hamburger</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Favorite Sports</legend>
+                    <div>
+                        <input type="radio" id="soccer" name="sport" value="Soccer">
+                        <label for="soccer">Soccer</label>
+                        <input type="radio" id="volleyball" name="sport" value="Volleyball">
+                        <label for="volleyball">Volleyball</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <label for="eyecolor">Eye Color:</label>
+                <select id="eyecolor" name="eyecolor">
+                    <option value="hazel">Hazel</option>
+                    <option value="brown">Brown</option>
+                </select>
+            </div>
+            <div>
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</fieldset>
+
+<!-- ✅ VALIDATION SCRIPT (REQUIRED) -->
+<script>
+    function validateForm() {
+        const age = document.getElementById("age").value;
+        if (age < 12) {
+            alert("Age must be at least 12.");
+            return false;
+        }
+        const date = document.getElementById("date").value;
+        if (date && new Date(date) < new Date("2023-01-01")) {
+            alert("Date must not be earlier than Jan 1, 2023.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a287da;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+    h1{
+        font-size: 60px;
+        text-align: center;
+        font-family: Serif;
+    }
+
+    p{
+        font-size: 25px;
+        color: white;
+        font-family: cursive;
+        text-align: center;
+    }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+}
+
+
+/*event details */
+
+.event-section {
+    background-color: white;
+    padding: 60px;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Event Details */
+.event-details h2 {
+    color: #b349b2;
+    text-align: center;
+}
+
+/* Date and Time Styling */
+time {
+    font-weight: bold;
+    color: #353535;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+/* guest Section */
+/* Team Section Styling */
+#guests {
+    text-align: center;
+    padding: 50px 20px;
+    background: #a287da;
+}
+
+/* Team Card Container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    height: 60vh;
+}
+
+/* Individual Team Card */
+.team-card {
+    background: violet;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    height: 35vh;
+}
+
+/* Team Member Image */
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect */
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Member Name */
+.team-card h4 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+/* Team Member Role */
+.team-card p {
+    color: #424141;
+    font-size: 14px;
+}
+/* Table Styling */
+#schedule{
+    background-color: #a287da;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Header */
+thead {
+    background: #b349b2;
+    color: white;
+    font-size: 18px;
+}
+
+/* Table Cells */
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Alternating Row Colors */
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background: #84adda;
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    #schedule {
+        width: 95%;
+        padding: 30px 10px;
+    }}
+#location{
+    background: #a287da;
+}
+
+#testimonials{
+    background: #a287da;
+}
+
+#gallery{
+    background: #a287da;
+}

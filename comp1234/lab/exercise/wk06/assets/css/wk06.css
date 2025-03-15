@@ -1,0 +1,67 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* Add margin around the HTML document */
+html {
+    margin: 20px;
+}
+
+/* Logo styling */
+.logo {
+    margin-right: auto;
+}
+
+/* Navigation bar styling */
+.container {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    margin: 5px 0 0 5px;
+    width: 81.25%;
+    height: 50px;
+}
+
+/* Styling for list items */
+#S1 ul {
+    padding: 20px;
+}
+
+.items {
+    padding: 10px 30px 10px 10px;
+    font-size: 20px;
+}
+
+.items a {
+    text-decoration: none;
+    color: white;
+}
+
+.items a:hover {
+    color: #f8b281;
+}
+
+/* Alternate text colors for list items */
+li:nth-child(odd) {
+    color: #777;
+}
+
+li:nth-child(even) {
+    color: blue;
+}
+
+/* Styling for Section 1 */
+#S1 {
+    list-style: none;
+    width: 81.25%;
+    border: 2px solid;
+}
+
+/* Louvre image styling */
+.louvre {
+    margin: 0 0 3px 3px;
+}
